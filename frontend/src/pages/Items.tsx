@@ -212,20 +212,19 @@ export default function Items() {
   };
 
   return (
-    <Layout>
+    <Layout
+      title="物品管理"
+      actions={
+        <button
+          onClick={openAddModal}
+          className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 shadow-soft"
+        >
+          <Plus size={16} />
+          添加物品
+        </button>
+      }
+    >
       <div className="p-6">
-        {/* 页面标题 */}
-        <div className="flex items-center justify-between mb-6">
-          <h1 className="text-2xl font-bold text-gray-900">物品管理</h1>
-          <button
-            onClick={openAddModal}
-            className="bg-primary-500 hover:bg-primary-600 text-white font-medium px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 shadow-soft"
-          >
-            <Plus size={16} />
-            添加物品
-          </button>
-        </div>
-
         {/* 搜索和筛选 */}
         <div className="bg-white rounded-xl shadow-soft p-6 mb-6">
           <div className="flex flex-col md:flex-row gap-4">

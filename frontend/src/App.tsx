@@ -3,6 +3,9 @@ import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import Items from "@/pages/Items";
+import Categories from "@/pages/Categories";
+import Locations from "@/pages/Locations";
+import Settings from "@/pages/Settings";
 import { useAuthStore } from "@/store/useAuthStore";
 
 // 认证保护组件
@@ -35,6 +38,21 @@ export default function App() {
         <Route path="/items" element={
           <ProtectedRoute>
             <Items />
+          </ProtectedRoute>
+        } />
+        <Route path="/categories" element={
+          <ProtectedRoute>
+            <Categories />
+          </ProtectedRoute>
+        } />
+        <Route path="/locations" element={
+          <ProtectedRoute>
+            <Locations />
+          </ProtectedRoute>
+        } />
+        <Route path="/settings" element={
+          <ProtectedRoute>
+            <Settings />
           </ProtectedRoute>
         } />
         <Route path="/login" element={

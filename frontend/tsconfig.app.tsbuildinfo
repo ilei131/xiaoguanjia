@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/components/layout.tsx","./src/pages/home.tsx","./src/pages/items.tsx","./src/pages/login.tsx","./src/pages/register.tsx","./src/store/useauthstore.ts"],"version":"5.8.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/components/header.tsx","./src/components/layout.tsx","./src/pages/categories.tsx","./src/pages/home.tsx","./src/pages/items.tsx","./src/pages/locations.tsx","./src/pages/login.tsx","./src/pages/register.tsx","./src/pages/settings.tsx","./src/store/useauthstore.ts"],"version":"5.8.3"}

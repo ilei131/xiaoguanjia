@@ -42,14 +42,8 @@ export default function Home() {
   ];
 
   return (
-    <Layout>
+    <Layout title="仪表盘">
       <div className="p-6">
-        {/* 页面标题 */}
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-gray-900">仪表盘</h1>
-          <p className="text-gray-500 mt-1">欢迎使用小管家物品管理系统</p>
-        </div>
-
         {/* 统计卡片 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {stats.map((stat, index) => {
