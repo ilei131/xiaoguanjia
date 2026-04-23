@@ -1,0 +1,18 @@
+[package]
+name = "xiaoguanjia-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+actix-rt = "2.0"
+diesel = { version = "2.1.4", features = ["postgres", "r2d2", "chrono"] }
+chrono = { version = "0.4", features = ["serde"] }
+jsonwebtoken = "9.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+actix-cors = "0.6"
+dotenv = "0.15.0"
+argon2 = "0.5"
+rand = "0.8"
